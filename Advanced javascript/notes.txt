@@ -1,0 +1,46 @@
+##Advanced Javascript:
+-It is totally based on objects and functions
+-In js it is said that almost everything is objects but not 100% because js has two types of datatypes:-
+
+#Primitive
+-Numbers
+-Strings
+-Booleans
+-Undefined
+-Null
+
+#everything else is objects
+-Arrays
+-functions
+-objects
+-Dates
+-Wrappers for Numbers, strings, booleans 
+
+##Object-Oriented promgramming
+-Objects interacting with one another through methods and properties.
+-used to store data, structure applications into modules and keeping code clean.
+
+## Constructors/prototypes:
+- We have written an object before holding some data and we were writing another object for same data for different person but in js we can write a single main object that is called "Constructors/prototypes" to create many more objects from this which is called "instances".
+
+
+## Inheritance
+-it means when one object is based on another object means the object gets access of another objects properties and methods.
+for eg: two consructors(i.e ram and shyam) - shyam has different properties than ram but some of them are similar then we dont have to write same properties in both due to inheritance shyam takes that similar properties from ram.
+
+## Inheritance in js: Prototypes and prototype chain
+-js is prototype based language that means inheritance can work something called prototype property.  every object has prototype property. it means that inheritance may works only with the prototype that every object have.
+
+# prototype chain
+- it makes inheritance works
+- let us create any object condtructor - then it is the instance1 of another main object which contains different property - likewise from that condtructor we can make another instance2 - now instance1 is the constructor of instance2 - we can write some prototype property in instance1/constructor - the access of this property is with instance2. 
+this overall view is called "prototype chain".
+
+## Summary
+-Every js object has a 'prototype property' which makes inheritance possible in js.
+
+- The prototype property of an object is where we put methods and properties that we want other objects to inherit.
+
+- The constructor's prototype property is NOT the prototype of the constructor itself. it's the prototype of ALL instances that are created through it.
+
+- When a certain method (or property) is called the search starts in the object itself and if it cannot be found the search moves on to the objects prototype. this continues until the method is found: 'Prototype chain'. last one is null i.e. it is not in any object.

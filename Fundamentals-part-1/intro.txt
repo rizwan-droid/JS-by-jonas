@@ -1,0 +1,24 @@
+Javascript:
+- A javascript is a lightweight, cross-platform, object oriented computer programming language.
+lightweight: means do not take more memory in computer, easy syntax and features.
+cross-platform: means it can be used in many system for not only web development but for many more.
+Object oriented: means the language is based on the object.
+
+- js is one of the three core technologies of web development.
+     *Client-side: js was traditionally only used in the browser.
+     *Server-side: Thanks to node.js, we can use js on the server as well.
+
+-js is what made the modern web development possible
+     *Dynamic effects and interactivity.
+     *modern web applications that we can interract with
+
+-Frameworks/librarieslike react and angular are 100% based on js: you need to master js to use them!
+
+
+Role of js in web development:
+HTML: Content
+CSS: presentation
+JS: Dynamic Effect/programming
+
+Versions of JS:
+ES6---->ES6/ES2015---->ES7/ES2016----->ES8/ES2017----->much more

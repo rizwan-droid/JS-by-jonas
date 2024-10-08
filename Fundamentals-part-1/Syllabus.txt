@@ -1,0 +1,8 @@
+Javascript Language and Basics
+How javascript works behind the scene
+Javascript in the browser: DOM Manipulation and Events - First Project(Rolling Dice)
+Advanced javascript: Objects and Functions and many more
+Putting it all together: The budget app Project
+Next generation javascript: Intro ES6/ES2015 and ES7, ES8, ES9
+Asynchronous javascript: Promises, Async/Await and AJAX
+Modern javascript: Using ES6, NPM, Babel and Webpack(Biggest project)

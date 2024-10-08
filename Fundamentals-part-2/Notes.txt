@@ -1,0 +1,117 @@
+ES5, ES6/ES2015 AND ES6+
+
+
+##
+ History of javascript:
+-1996: changed from livescript to javascript to attract java developers. javascript has almost nothing to do with java.
+
+-1997: ES1(ECMAScript 1) became the first version of the javascript language standard.
+    *ECMAscript: The language standard;
+    *javascript: The language in practice.
+
+2009: ES5 was released with the lots of new features
+
+2015: ES6/ES2015 was released the biggest update of the language ever!
+        it is also called 2015 because js changed to an annual release cycle in 2015.
+
+201/2017/2018/2019/... : release of es2016/es2017/...
+
+
+# ES5
+-fully supported in all browser
+-ready to be used today.
+
+#ES6/ES7/ES8
+-well supported in all modern browser
+-no support in older browser
+-can use most features in production with transpiling and polyfiling(coberting to ES5)
+
+#ES9/ES10
+-future versions, together called ESNext
+-some features supported in modern browsers
+-can already use some feature in production with transpiling and polyfiling.
+
+
+# we use ES5 and ES6 in the coure: why?
+#ES5
+-javascript fundamentals
+-how the language works
+-DOM manipulation project
+-Advanced language features
+-Huge real project
+
+#ES6
+-ES6/ES2015 intro
+-Asynchronous javascript
+-AJAX and API calls
+-Modern dev setups(webpack and babel)
+-huge real project
+
+Note:
+1. you will have to understand ES5 today and in the future
+2. Many tutorials and code you find online today are still in ES5
+3. when working on older codebases, these will be written in ES5
+4. It's better and easier to learn the fundamentals in ES5 and then update to ES6+
+
+## How javascript works behind the scene
+-js need server to run for eg browser, nodejs etc
+
+Code-->javascript Engine
+
+js engine contains -->Parser-->Conversion to machine code-->code runs
+
+parser:- it checks the code line by line and find the syntax is correct or is there any sort of error.if everything ok then this parser gives a data structre that is known as Abstract syntax tree.
+
+Conversion to machine code:- it receives that abstract syntax tree and converts it into machine code i.e 0/1
+
+code runs:-the machine code finally runs.
+
+
+## Execution context and Execution Stacks
+*Execution context:
+-a box, a container or a wrapper which stores variables and in which a piece of our code is evaluated. 
+
+The default-->Global Execution context
+-code that is not inside any function
+-Associated with the global object
+-In the browser, that's the window object
+
+eg lastname=== window.lastname //true
+
+*Execution stack:
+- all the variables are stored in a global execution context if any function is called then a new execution context is created and so on likewise a stack of a execution context is created this is called execution stack. The context got pop/remove one by one when a function returns.
+
+# Execution contexts in detail: Creation and execution phases and hoisting.
+
+Execution context object
+-variable object(VO)
+-Scope chain
+-"This" variable
+
+1. creation phase:
+-creation of VO
+-creation of the scope chain
+-determine value of the 'this' variable.
+
+2. Execution phase:
+-the code of the function that is generated the current execution context is ran line by line.
+
+*Variable object:
+1.the arguments object is created, containing all the arguments that were passed into the function.
+2. code is scanned for function declarations:for each function, a property is created in the variable object, pointing to the function.
+3. code is scanned for variable declarations: for each variable, a property is created in the variable object and set to undefined.
+4. point no 2 and 3 are together called as "hoisting". function is defined in the creation phase but variable are undefined in the creation phase however it gets defined in the execution phase.
+
+*Scoping in js
+1. scoping answers the question "where can we access a certain variable?"
+2. Each new function creates a scope: the space/environment, in which the variables it defines are  accessible.
+3. lexical scoping: a function that is lexically within the another function gets access to the scope of the outer function.
+
+#scope chain:
+- scope(all the stuffs inside the function body). when a scope doesnot find the value of the variable in the current scope then it goes to its parent function's scope if it do not find it there then it goes to the global scope and according global and more local scopes are created which is known as scope chain.
+
+*This variable:
+1. Regular function call: the this keyword points at the global object, (the window object, in the browser)
+2. method call: the this variable points to the object that is calling the method.
+3. the this keyword is not assigned a value until a function where it is defined is actually called.
+
